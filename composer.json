@@ -8,6 +8,11 @@
             "email": "cor@in.ter.net"
         }
     ],
+    "scripts": {
+        "test": [
+            "vendor/bin/phpunit"
+        ]
+    },
     "homepage": "https://github.com/corbosman/laravel-pipeline-passable",
     "keywords": ["Laravel", "Pipeline"],
     "require": {
