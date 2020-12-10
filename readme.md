@@ -66,11 +66,6 @@ class MyPipeline extends Passable
         ]);
     }
 
-    /**
-     * This pipeline should return the settings
-     *
-     * @return array
-     */
     public function return() : array
     {
         return $this->output;
