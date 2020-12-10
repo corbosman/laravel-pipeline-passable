@@ -68,7 +68,7 @@ class MyPipeline extends Passable
 
     public function return() : array
     {
-        return $this->output;
+        return $this->output->toArray();
     }
 }
 ```
