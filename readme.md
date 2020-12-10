@@ -85,7 +85,7 @@ $output = MyPipeline::factory($username)->pipeline([
 
 To send this Passable through Laravel's Pipeline, you call the _pipeline_ method with an array of classes. Just like with middleware classes, you have to make sure that your class calls the next class, as shown in the examples below. The Pipeline class allows several different options. 
 
-* Normal class with a handle methods
+* Normal class with a handle method
 
 ```php
 class Uppercase
