@@ -19,7 +19,7 @@ You should be familiar on how Laravel Pipelines work. They're used in the Router
 
 This package extends Spatie's DataTransferObject, so you can check their docs on how you can instantiate this class. It helps to understand what a DTO is and how you can use it. There is two common patterns, you either pass your class properties through the constructor, or you create a static method. 
 
-### Constructor methods
+### Constructor
 
 ```php
 use CorBosman\Pipeline\Passable;
