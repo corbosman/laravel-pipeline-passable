@@ -11,6 +11,7 @@
     "homepage": "https://github.com/corbosman/laravel-pipeline-passable",
     "keywords": ["Laravel", "Pipeline"],
     "require": {
+        "php": ">=7.4",
         "illuminate/support": "~7|~8",
         "spatie/data-transfer-object": "^2.6"
     },
