@@ -3,7 +3,7 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Laravel Pipeline class only takes a single input parameter. This unfortunately limits how you can use that class to your advantage. This is an extremely opinionated solution using a Passable class that extends [Spatie's Data Transfer Object](https://github.com/spatie/data-transfer-object). It's just something I needed myself in several projects, so I extracted it to a package.  
+Laravel's Pipeline class only takes a single input parameter. This unfortunately limits how you can use that class to your advantage. This is an opinionated solution using a Passable class that extends [Spatie's Data Transfer Object](https://github.com/spatie/data-transfer-object). It's just something I needed myself in several projects, so I extracted it to a package.  
 
 ## Installation
 
