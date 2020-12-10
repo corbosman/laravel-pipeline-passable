@@ -91,6 +91,53 @@ $output = MyPipeline::factory($username)->pipeline([
 ]);
 ```
 
+## Pipeline classes
+
+To send this Passable through Laravel's Pipeline, you call the _pipeline_ method with an array of classes. Just like with middleware classes, you have to make sure that your class calls the next class, as shown in the examples below. The Pipeline class allows several different options as a Passable. 
+
+* Normal class with a handle methods
+
+```php
+class Uppercase
+{
+    public function handle(MyPipeline $passable, $next)
+    {
+        $passable->output = strtoupper($passable->username);
+
+        return $next($passable);
+    }
+}
+```
+
+* An invokable class
+
+```php
+class Uppercase
+{
+    public function __invoke(MyPipeline $passable, $next)
+    {
+        $passable->output = strtoupper($passable->username);
+
+        return $next($passable);
+    }
+}
+```
+
+* An object, note that the object should have the handle method on it
+
+```php
+$uppercase = new Uppercase;
+$result = MyPipeline::factory($input)->pipeline([$uppercase]);
+```
+
+### Changing the called method
+
+By default the __handle()__ method is called on each pipeline class. If you want to override that, you can set the method name as the second parameter of the __pipeline()__ method.
+
+```php
+$result = MyPipeline::factory($input)->pipeline([...], 'filter');
+```
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
