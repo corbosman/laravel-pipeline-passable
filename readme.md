@@ -17,7 +17,7 @@ $ composer require corbosman/laravel-pipeline-passable
 
 You should be familiar on how Laravel Pipelines work. They're used in the Router and Middleware. It lets you pass a variable through a set of classes, and return the result. Sort of like array_reduce. Since you can't pass in multiple variables, it's not possible to send in some kind of input and output that are separate. That's where this package comes in. It allows you to create a class with multiple properties, and in the end return one of the properties as the result of the pipeline. By default, it just returns the class itself as the result, but you can implement a _return_ method that returns whatever you want. 
 
-This package extends Spatie's DataTransferObject, so you can check their docs on how you can instantiate this class. It helps to understand what a DTO is and how you can use it. There is two common patterns, you either pass your class properties through the constructor, or you create a factory methods. 
+This package extends Spatie's DataTransferObject, so you can check their docs on how you can instantiate this class. It helps to understand what a DTO is and how you can use it. There is two common patterns, you either pass your class properties through the constructor, or you create a static method. 
 
 ### Constructor methods
 
