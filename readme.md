@@ -29,11 +29,6 @@ class MyPipeline extends Passable
     public string $username;
     public array $output;
 
-    /**
-     * This pipeline should return the settings
-     *
-     * @return array
-     */
     public function return() : array
     {
         return $this->output;
